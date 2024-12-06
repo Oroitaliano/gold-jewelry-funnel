@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Complete Your Purchase</h1>
+  </header>
+
+  <main class="checkout">
+    <p>Total: $249</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="your-paypal-email@example.com">
+      <input type="hidden" name="item_name" value="10K Gold Rope Chain Necklace">
+      <input type="hidden" name="amount" value="249.00">
+      <input type="hidden" name="currency_code" value="USD">
+      <button type="submit" class="btn">Pay with PayPal</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2024 Oro Italiano - All Rights Reserved</p>
+  </footer>
+</body>
+</html>
